@@ -1,0 +1,90 @@
+pre {
+    display: block;
+    margin-top: 0;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+.mirror-line{
+    text-align: left;
+    margin-bottom: 0;
+    overflow: inherit;
+    font-size: 1em; 
+}
+
+.coords {
+    margin-left: 1em;
+    background-color: antiquewhite;
+}
+
+.cursor {
+
+    visibility: hidden;
+
+    left: 4px; 
+    top: 0px; 
+    height: 19.1875px;
+
+    position: absolute;
+    /* background-color: rgb(254, 186, 186);  */
+    border-left: 1px solid black;
+}
+
+#textAreaHidden{
+    /* height: 0px;
+    width: 0px;*/
+    opacity: 0%; 
+
+    z-index: -1;
+    top: 0px;
+
+    position: absolute;
+
+}
+
+.selectedText {
+    background-color: #3390ff;
+    color: white;
+}
+
+.text-in-line{
+    display: flex;
+}
+
+.find-coords-by-distance {
+    background-color: rgb(252, 142, 142);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.yellow{
+    background-color: rgb(247, 247, 208);
+}
+
+.red{
+    background-color: red;
+    color: white;
+    
+}
+
+.white{
+    background-color: white;
+}
+
+.lightgreen {
+    background-color: rgb(229, 247, 229)
+}
+
+.mirror-text-view{
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.375rem;
+    position: relative;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px; */
+    height: 200px;
+    overflow: auto;
+    cursor: text;
+}
